@@ -1,0 +1,60 @@
+body {
+    margin: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 102, 255);
+}
+
+.h00 {
+    font-size: 35px;
+    display: inline-block;
+    padding: 5px;
+    color: blue;
+}
+
+.main {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    top: 175px;
+}
+
+.h1span {
+    text-align: center;
+    border: none;
+}
+
+.divbtn {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    border: none;
+    margin: 11px;
+    padding: 6px;
+    width: 80px;
+}
+
+.resetbtn {
+    background-color: rgb(160, 12, 12);
+    color: white;
+}
+
+#startbtn {
+    background-color: rgb(0, 165, 0);
+    color: white;
+}
+
+.pausebtn {
+    background-color: rgb(25, 63, 167);
+    color: white;
+
+}
