@@ -1,57 +1,56 @@
+let hours = 0;
+let min = 0;
+let sec = 0;
+let msec = 0;
 
-var hours = 0
-var min = 0
-var sec = 0
-var msec = 0
+let gethours = document.getElementById('hours');
+let getmin = document.getElementById('min');
+let getsec = document.getElementById('sec');
+let getmsec = document.getElementById('msec');
 
-var gethours = document.getElementById('hours')
-var getmin = document.getElementById('min')
-var getsec = document.getElementById('sec')
-var getmsec = document.getElementById('msec')
-
-var interval;
+let interval;
 
 function startbtn() {
     interval = setInterval(function () {
-        msec++
-        getmsec.innerHTML = msec
+        msec++;
+        getmsec.innerHTML = msec;
 
         if (msec >= 100) {
-            sec++
-            getsec.innerHTML = sec
-            msec = 0
+            sec++;
+            getsec.innerHTML = sec;
+            msec = 0;
         }
 
         else if (sec >= 60) {
-            min++
-            getmin.innerHTML = min
-            sec = 0
+            min++;
+            getmin.innerHTML = min;
+            sec = 0;
         }
 
         else if (min >= 60) {
-            hours++
-            gethours.innerHTML = hours
-            min = 0
+            hours++;
+            gethours.innerHTML = hours;
+            min = 0;
         }
 
     }, 10)
-    document.getElementById('startbtn').disabled = true
+    document.getElementById('startbtn').disabled = true;
 }
 
 function stop() {
-    clearInterval(interval)
-    document.getElementById('startbtn').disabled = false
+    clearInterval(interval);
+    document.getElementById('startbtn').disabled = false;
 }
 
 function reset() {
-    
-    hours = 0
-    min = 0
-    sec = 0
-    msec = 0
 
-    gethours.innerHTML = hours
-    getmin.innerHTML = min
-    getsec.innerHTML = sec
-    getmsec.innerHTML = msec
+    hours = 0;
+    min = 0;
+    sec = 0;
+    msec = 0;
+
+    gethours.innerHTML = hours + '0';
+    getmin.innerHTML = min + "0";
+    getsec.innerHTML = sec + "0";
+    getmsec.innerHTML = msec + "0";
 }
