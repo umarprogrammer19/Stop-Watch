@@ -11,6 +11,12 @@ body {
     display: inline-block;
     padding: 5px;
     color: blue;
+    font-family: sans-serif;
+}
+
+.colon {
+    font-size: 40px;
+    color: blue;
 }
 
 .main {
