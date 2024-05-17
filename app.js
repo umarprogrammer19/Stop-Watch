@@ -15,19 +15,19 @@ function startbtn() {
         msec++;
         getmsec.innerHTML = msec;
 
-        if (msec >= 100) {
+        if (msec > 100) {
             sec++;
             getsec.innerHTML = sec;
             msec = 0;
         }
 
-        else if (sec >= 60) {
+        else if (sec > 60) {
             min++;
             getmin.innerHTML = min;
             sec = 0;
         }
 
-        else if (min >= 60) {
+        else if (min > 60) {
             hours++;
             gethours.innerHTML = hours;
             min = 0;
