@@ -21,13 +21,13 @@ function startbtn() {
             msec = 0;
         }
 
-        else if (sec > 60) {
+        else if (sec >= 59) {
             min++;
             getmin.innerHTML = min;
             sec = 0;
         }
 
-        else if (min > 60) {
+        else if (min >= 59) {
             hours++;
             gethours.innerHTML = hours;
             min = 0;
